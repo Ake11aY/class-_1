@@ -1,9 +1,23 @@
-void main() {
-  var x = reverseList([1, 2, 3, 4]);
-  pr
-}
+//мое решение
+// void main() {
+//   Aver(int a, int b) {
+//     List<int> lst = [];
+//     int c = a;
+//     for (var i = a; i <= b; i++) {
+//       lst.add(c);
+//       c++;
+//     }
+//     print(lst);
+//   }
 
-List<int> reverseList(List<int> list) {
-  List<int> reversedlist = List.from(list.reversed);
-  return reversedlist;
+//   Aver(1, 5);
+// }
+
+//не мое решение
+void main() {
+  List<int> between(int a, int b) {
+    return [for (int i = a; i <= b; i++) i];
+  }
+
+  print(between(1, 3));
 }
